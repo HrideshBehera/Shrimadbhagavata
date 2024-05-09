@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap');
+
+body {
+    background-color: rgb(240, 201, 26);
+}
+
+.navbar{
+    display: none;
+    z-index: 10000;
+}
+
+.navbar-brand{
+    background-color: rgb(214, 196, 0);
+    border-radius: 30px;
+    color: black;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.carousel-item img{
+    max-height: 500px;
+}
+
+.album{
+    background: rgb(244, 217, 99);
+    border-radius: 15px;
+    margin-top: 25px;
+}
+
+
+/* Style for pre-loader */
+#preloader {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease-in-out; /* Add a transition effect */
+}
+#preloader video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#content {
+    display: none; /* Hide content initially */
+    transition: opacity 1s ease-in-out; /* Add a transition effect */
+    opacity: 0;
+}
+
+
+
+/*RESPONSIVE */
+@media screen and (max-width: 768px){
+    .navbar-brand{
+        padding: 7px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .carousel-item img{
+        max-height: 400px;
+    }
+}
